@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Academy - Bogga Rasmiga ah</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            direction: ltr;
+        }
+        header {
+            background: #0f172a;
+            color: #fff;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #38bdf8;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: #38bdf8;
+        }
+        .hero {
+            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+        }
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: #38bdf8;
+        }
+        .hero p {
+            font-size: 18px;
+            max-width: 650px;
+            margin: 0 auto 30px auto;
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+        .btn {
+            background-color: #38bdf8;
+            color: #0f172a;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 700;
+            display: inline-block;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background-color: #0ea5e9;
+            color: white;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 30px;
+            color: #0f172a;
+        }
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .course-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+        .course-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .course-content {
+            padding: 20px;
+        }
+        .course-content h3 {
+            margin-bottom: 10px;
+            color: #0f172a;
+        }
+        .course-content p {
+            color: #64748b;
+            font-size: 14px;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 60px;
+        }
+        footer p {
+            font-size: 14px;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo"><i class="fa-solid fa-graduation-cap"></i> Digital Academy</div>
+        <nav>
+            <a href="#">Bogga Hore</a>
+            <a href="#courses">Koorsooyinka</a>
+            <a href="#contact">Nala Xiriir</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Ku Soo Dhawoow Digital Academy</h1>
+        <p>Baro xirfadaha casriga ah ee IT-ga, Networking-ka, iyo Cybersecurity-ga adigoo la socda jawi waxbarasho oo heer sare ah oo ay ardaydu ku tababartaan xirfadaha mustaqbalka.</p>
+        <a href="#courses" class="btn">Bilow Barashada Hadda</a>
+    </section>
+
+    <div class="container" id="courses">
+        <h2 class="section-title">Koorsooyinkeena Muhiimka ah</h2>
+        <div class="courses-grid">
+            
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=500&q=80" alt="Ardayda oo baraneysa Networking">
+                <div class="course-content">
+                    <h3>Computer Networking</h3>
+                    <p>Baro qaabka ay shabakadaha kombuyuutarradu u shaqeeyaan, habaynta router-ada, iyo isku xirka qalabka casriga ah.</p>
+                    <a href="#" class="btn" style="padding: 8px 15px; font-size: 14px;">Faahfaahin</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=500&q=80" alt="Cybersecurity Lab">
+                <div class="course-content">
+                    <h3>Cybersecurity & Firewall</h3>
+                    <p>Baro sida loo ilaaliyo xogta shirkadaha, loona isticmaalo qalabka amniga sida Wireshark iyo pfSense.</p>
+                    <a href="#" class="btn" style="padding: 8px 15px; font-size: 14px;">Faahfaahin</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=500&q=80" alt="Ardayda Akadeemiyada">
+                <div class="course-content">
+                    <h3>Web Development</h3>
+                    <p>Baro luqadaha HTML, CSS, iyo JavaScript si aad u dhisato website-yo casri ah oo adiga kuu gaar ah.</p>
+                    <a href="#" class="btn" style="padding: 8px 15px; font-size: 14px;">Faahfaahin</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer id="contact">
+        <p>&copy; 2026 Digital Academy. Xuquuqda ay xafidan tahay. | La xiriir: info@digitalacademy.so</p>
+    </footer>
+
+</body>
+</html>
